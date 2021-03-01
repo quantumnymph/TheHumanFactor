@@ -1,0 +1,67 @@
+* {
+    background-color: #fff6ea;
+    line-height: 1.6;
+    font-family:'Times New Roman';
+    box-sizing: border-box;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 2cm;
+    padding-bottom: 1cm;
+    font-size: 35pt;
+}
+
+.uinput, .welcome{
+    text-align: justify;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.btn{
+    width: 100px;
+    clear: both;
+    margin: auto;
+    background-color: rgb(129, 42, 42);
+    border-color: white;
+    color: white;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+
+}
+
+.newgame, .newgame2 {
+    display: block;
+    padding: 10%;    
+    text-align: justify;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newgame {
+    border-color: rgb(129, 42, 42);
+}
+
+.newgame2 {
+    color:  #c4a781;
+    text-align: center;
+}
+
+.columnwrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
