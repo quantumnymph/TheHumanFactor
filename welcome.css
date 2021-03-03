@@ -38,7 +38,6 @@ h1{
 .newgame, .newgame2 {
     display: block;
     padding: 10%;    
-    text-align: justify;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -47,6 +46,7 @@ h1{
 
 .newgame {
     border-color: rgb(129, 42, 42);
+    text-align: left;
 }
 
 .newgame2 {
