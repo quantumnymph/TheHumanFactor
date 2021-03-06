@@ -1,7 +1,6 @@
 * {
-    background-color: #fff6ea;
     line-height: 1.6;
-    font-family:'Times New Roman';
+    font-family:'Arial';
     box-sizing: border-box;
 
 }
@@ -23,7 +22,7 @@ h1{
     width: 100px;
     clear: both;
     margin: auto;
-    background-color: rgb(129, 42, 42);
+    background-color:firebrick;
     border-color: white;
     color: white;
 }
@@ -38,7 +37,6 @@ h1{
 .newgame, .newgame2 {
     display: block;
     padding: 10%;    
-    text-align: justify;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -50,7 +48,7 @@ h1{
 }
 
 .newgame2 {
-    color:  #c4a781;
+    color:  lightgray;
     text-align: center;
 }
 
