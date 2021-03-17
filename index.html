@@ -10,29 +10,58 @@
 </head>
 
 <body>
-    <div class = "welcome">
-        <h1>The Human Factor</h1>
-        <p>The human factor is an old-school style text adventure game series proposed as a concept by a graphic design student researching the connection between decision making and connotations in an environment where the choice is put into context. The premise is that there could be a difference in answers when the subject is asked about a connection indirectly rather than directly, thus exploring a subconscious connection. Basically, the goal of the games is to analyse the answers of players in accordance to expected connotations of certain answers as distributed by age groups, gender and education.  We hope to analyse the results to compare them to our predictions, so it would be great if you could fill out the following:</p>
-    </div>   
-    <div class = "uinput">
-        
-        <p>AGE:</p>
-        <form id = "inputage">
-            <input type="text" name="inputage">
-        </form>
-        <p>GENDER:</p>
-        <form id = "inputgender">
-            <input type="text" name="inputgender">
-        </form>
-        <p>LEVEL OF EDUCATION:</p>
-        <form id = "inputeducation">
-        <input type="text" name="inputeducation">
-        </form>
-        <br><br>
-        <button buttontype="button" class="btn btn-success btn-lg" onclick="location.href='games.html';">SUBMIT</button>
-        <br><br>
-        <button buttontype="button" onclick="location.href='games.html';">or continue without filling out information</button>
+    <div class = "backgroundcolor">
+        <div class = "welcome">
+            <h1>The Human Factor</h1>
+            <p>The human factor is an old-school style text adventure game series proposed as a concept by a graphic design student researching the connection between decision making and connotations in an environment where the choice is put into context. The premise is that there could be a difference in answers when the subject is asked about a connection indirectly rather than directly, thus exploring a subconscious connection. Basically, the goal of the games is to analyse the answers of players in accordance to expected connotations of certain answers as distributed by age groups, gender and education.  We hope to analyse the results to compare them to our predictions, so it would be great if you could fill out the following:</p>
+        </div>   
+        <div class = "uinput">
+            <div class="child">
+                <p>AGE:</p>
+                <form>
+                    <input type="radio" name="drone">
+                    <label>10 - 20</label><br>
+                    <input type="radio" name="drone">
+                    <label>20 - 30</label><br>
+                    <input type="radio" name="drone">
+                    <label>30+</label>
+                </form>
+            </div>
+            <div class="child">
+                <p>GENDER:</p>
+                <form>
+                    <input type="radio" name="drone">
+                    <label>Male</label><br>
+                    <input type="radio" name="drone">
+                    <label>Female</label><br>
+                    <input type="radio" name="drone">
+                    <label>Other</label>
+                </form>
+            </div>
+            <div class="child">
+                <p>LEVEL OF EDUCATION:</p>
+                <form>
+                    <input type="radio" name="drone">
+                    <label>elementary school</label><br>
+                    <input type="radio" name="drone">
+                    <label>high school</label><br>
+                    <input type="radio" name="drone">
+                    <label>higher education</label>
+                </form>
+            </div>
+            <br><br>
+            <div class = "childbtn">
+                <br><br>
+                <button buttontype="button" class="btn btn-success btn-lg" onclick="location.href='games.html';">SUBMIT</button>
+                <br><br>
+                <button buttontype="button" onclick="location.href='games.html';">or continue without filling out information</button>
+            </div>
+        </div>
+        <div>
     </div>
-
+    <footer>
+        <p>Made by: Donata Butkovic (<a href="https://github.com/quantumnymph">quantumnymph </a> on github) with the help of <a href="https://github.com/textadventures/squiffy">squiffy</a></p>
+    </footer>
+    </div>
 </body>
 </html>
