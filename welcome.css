@@ -14,7 +14,7 @@ footer {
 }
 
 body {
-    background-color: rgb(247, 236, 225);
+    background-color: rgb(232, 223, 230);
 }
 
 
@@ -52,7 +52,7 @@ h1{
     width: 100px;
     clear: both;
     margin: auto;
-    background-color:firebrick;
+    background-color:#5f172c;;
     border-color: white;
     color: white;
 }
@@ -62,26 +62,6 @@ h1{
     line-height: 1.3333333;
     border-radius: 6px;
 
-}
-
-.newgame, .newgame2 {
-    display: block;
-    padding: 10%;    
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-}
-
-.newgame {
-    border-color: rgb(129, 42, 42);
-    text-align: left;
-}
-
-.newgame2 {
-    color:  lightgray;
-    text-align: center;
 }
 
 .columnwrapper {
@@ -95,3 +75,21 @@ h1{
 h2 {
     text-align: center;
 }
+
+.columnwrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+}
+
+.newgame {
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    background-color: rgb(214, 201, 211);
+    position: relative;
+  }
