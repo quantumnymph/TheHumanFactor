@@ -6,15 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <title>The Human Factor</title>
-  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="welcomenew.css">
+  <script src="websiteback.js" charset="UTF-8"></script>
 </head>
 
 <body>
+<div class = "parent">
     <div class = "sve">
         <div class = "welcome">
-            <h1>The Human Factor</h1>
+            <h1>The <br> Human <br> Factor</h1>
+            <br>
             <p>The human factor is an old-school style text adventure game series proposed as a concept by a graphic design student researching the connection between decision making and connotations in an environment where the choice is put into context. The premise is that there could be a difference in answers when the subject is asked about a connection indirectly rather than directly, thus exploring a subconscious connection. Basically, the goal of the games is to analyse the answers of players in accordance to expected connotations of certain answers as distributed by age groups, gender and education.  We hope to analyse the results to compare them to our predictions, so it would be great if you could fill out the following:</p>
         </div>   
+        <br>
         <div class = "uinput">
             <div class="child">
                 <p>AGE:</p>
@@ -48,19 +52,38 @@
                     <input type="radio" name="drone">
                     <label>higher education</label>
                 </form>
-            </div>
-            <br><br>
-            <div class = "childbtn">
-                <br><br>
-                <button buttontype="button" class="btn btn-success btn-lg" onclick="location.href='games.html';">SUBMIT</button>
-                <br><br>
-                <button buttontype="button" onclick="location.href='games.html';">or continue without filling out information</button>
-            </div>
         </div>
+            </div>
+            <br>
+            <div class = "btn">
+                <br><br>
+                <button buttontype="button" class="btnmain" onclick="location.href='games.html';">SUBMIT</button>
+            </div>
+            <div class = "btn">
+                <br>
+                <button buttontype="button" class="btn2" onclick="location.href='games.html';">or continue without filling out information</button>
+            </div>
         <div>
+        <br> <br>
+        <div class = "howtoplay">
+            <h2>How to play a text adventure?</h2>
+            <br>
+            <p>Text based adventure games or interactive fiction have been around since the very beginnings of computing. They were useful because they did not require loads of complicated graphics and rendering, only a story algorithm that prompted decisions from the user and a parser to run the game. Since they don’t require a graphic interface, they could be run in terminals even before there were GUI-s. They are much rarer now, of course, but you can still come across them here and there, especially in nerd circles. 
+                <br><br>
+                The way the games work is by describing a scenario to the player, who can then decide on their next course of action. While, usually, the player thinks of and writes in the input themself, The Human Factor games are beginner level, so they provide links on which you can click to proceed to the next step. In many cases text adventures prompt you with directions such as ‘south’ ‘west’ or ‘back’, expecting you to remember where the different locations are with respect to each other, so it is sometimes useful to draw a map as you’re playing, so as not to get lost. Another thing to note is that if you want to go, say, east twice, the game will repeat the text of the place in between, and you can’t just skip to the destination. One move is one step. Depending on the choices you make, you will find different parts of the map, different storylines and get different endings. 
+                <br><br>
+                Lastly, some acknowledgments: The Human Factor was made with the help of squiffy: an amazing opensource tool written in JavaScript, which assists with making the logic of your game function and provides ready-to-use JS code, as well as HTML for web. You can find out more on their <a href="https://github.com/textadventures/squiffy">github</a> or on <a href="https://textadventures.co.uk">textadventures.co.uk</a>. Thanks to them for saving me quite a bit of work. 
+                </p>
+        </div>
+    </div>
+    <div class = "monogram">
+        <img src="monogram.svg" />
     </div>
     </div>
+
+</div>
 </body>
+<br><br>
 <footer>
     <p>Made by: Donata Butkovic (<a href="https://github.com/quantumnymph">quantumnymph </a> on github) with the help of <a href="https://github.com/textadventures/squiffy">squiffy</a></p>
 </footer>

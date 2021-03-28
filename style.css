@@ -5,13 +5,13 @@
 a.squiffy-link
 {
     text-decoration: underline;
-    color: rgb(163, 0, 35);
+    color: rgb(41, 41, 41);
     cursor: pointer;
 }
 a.squiffy-header-link
 {
     text-decoration: underline;
-    color:  rgb(163, 0, 35);
+    color: crimson;
     cursor: pointer;
     font-size: larger;
 }
