@@ -770,3 +770,35 @@ squiffy.story.sections = {
 	},
 }
 })();
+
+
+let sheet = 'https://docs.google.com/spreadsheets/d/1flQaxTxG_G1EbXsBSV_RIIfFGyHWeyIFXZeuTGYumf0/edit#gid=0'
+
+function sheetsDataGetter() {
+    let lista_odluka = []
+
+    if (squiffy.story.seen("pawn medallion")) lista_odluka.append("medallion");
+    if (squiffy.story.seen("pawn painting")) lista_odluka.append("painting");
+    if (squiffy.story.seen("talk to blue gang")) lista_odluka.append("blue");
+    if (squiffy.story.seen("talk to red gang")) lista_odluka.append("red");
+    if (squiffy.story.seen("take middle booth")) lista_odluka.append("middle");
+    if (squiffy.story.seen("take corner booth")) lista_odluka.append("corner");
+    if (squiffy.story.seen("order beer")) lista_odluka.append("beer");
+    if (squiffy.story.seen("order scotch")) lista_odluka.append("scotch");
+
+    sendToZapier(lista_odluka);
+
+    });
+}
+
+function sendToZapier(_lista_odluka) {
+    try {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", `https://maker.ifttt.com/trigger/listaodluka/with/key/hXG5iV8pdCknUFmhFQEB070SqEVasyBgNeqEdUARt_p?value1=${_lista_odluka}`);
+        xhr.send();
+        console.log("Pushed to Zapier successfully!");
+
+    } catch (e) {
+        console.error(e);
+    }
+}
